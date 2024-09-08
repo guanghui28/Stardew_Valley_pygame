@@ -1,6 +1,7 @@
 import pygame # type: ignore
 from settings import *
 from player import Player
+from debug import debug
 
 class Level:
 	def __init__(self):
@@ -20,3 +21,4 @@ class Level:
 		self.display_surface.fill('black')
 		self.all_sprites.draw(self.display_surface)
 		self.all_sprites.update(dt)
+		debug(self.player.rect.center)
