@@ -21,4 +21,4 @@ class Level:
 		self.display_surface.fill('black')
 		self.all_sprites.draw(self.display_surface)
 		self.all_sprites.update(dt)
-		debug(self.player.rect.center)
+		debug(self.player.status)
